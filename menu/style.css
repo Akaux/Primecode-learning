@@ -13,7 +13,7 @@ body {
 
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: auto 795px;
+    background-size: 100%;
 
     font-family: Arial, sans-serif;
 }
@@ -148,14 +148,14 @@ body {
 
 #menu {
     width: 1000px;
-    min-height: auto;
+    
 
-    padding-top: 0px;
+   
 }
 
 #fade-in {
     width: 100%;
-    min-height: 630px;
+    min-height: 800px;
 
     padding: 100px 70px;
 
