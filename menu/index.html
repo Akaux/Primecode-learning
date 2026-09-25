@@ -4,226 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Video</title>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download_for_offline" />
     <link rel="icon" href="https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon.png">
-    <style>
-        body{
-            background-image: url(https://m.media-amazon.com/images/G/32/digital/video/Magellan_MLP/BRND_MTH25_PVMagnetLeft_1440x675_POST_Final_pt-BR_PV00057512.jpg);
-            background-position-x: right;
-            background-repeat: no-repeat;
-            background-color: black;
-        }
-        #head{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-        }
-      #bar .button-superior {
-        transition: 0.5s ease;
-        margin: 60px 190px;
-        font-size: 120%;
-        font-style:normal;
-        color: rgb(255, 255, 255);
-        background-color: #00050D;
-        border: none;
-        cursor: pointer;
-      }
-      #bar .button-superior-2 {
-        transition: 0.5s ease;
-        margin: 60px -160px;
-        font-size: 120%;
-        font-style:normal;
-        color: rgb(255, 255, 255);
-        background-color: #00050D;
-        border: none;
-        cursor: pointer;
-      }
-      #bar .button-superior-3 {
-        transition: 0.5s ease;
-        margin: 60px 180px;
-        font-size: 120%;
-        font-style:normal;
-        color: rgb(255, 255, 255);
-        background-color: #00050D;
-        border: none;
-        cursor: pointer;
-      }
-      #bar .button-superior-4 {
-        transition: 0.5s ease;
-        margin: 60px -160px;
-        font-size: 120%;
-        font-style:normal;
-        color: rgb(255, 255, 255);
-        background-color: #00050D;
-        border: none;
-        cursor: pointer;
-      }
-      #bar .button-superior-5 {
-        transition: 0.5s ease;
-        margin: 60px 170px;
-        font-size: 120%;
-        font-style:normal;
-        color: rgb(255, 255, 255);
-        background-color: #00050D;
-        border: none;
-        cursor: pointer;
-      }
-      
-      
-      #bar .button-superior:hover{
-        box-shadow: 0 0 5px #ffffff;
-        margin-top: 10px;
-        height: 40px;
-        color: black;
-        background-color: #E6E6E7;
-        border-radius: 5px
-     }
-     #bar .button-superior-2:hover{
-      box-shadow: 0 0 5px #ffffff;
-      margin-top: 1px;
-      height: 40px;
-      color: black;
-      background-color: #E6E6E7;
-      border-radius: 5px
-   }
-   #bar .button-superior-3:hover{
-      box-shadow: 0 0 5px #ffffff;
-      margin-top: 1px;
-      height: 40px;
-      color: black;
-      background-color: #E6E6E7;
-      border-radius: 5px
-   }
-   #bar .button-superior-4:hover{
-      box-shadow: 0 0 5px #ffffff;
-      margin-top: 1px;
-      height: 40px;
-      color: black;
-      background-color: #E6E6E7;
-      border-radius: 5px
-   }
-   #bar .button-superior-5:hover{
-      box-shadow: 0 0 5px #ffffff;
-      margin-top: 1px;
-      height: 40px;
-      color: black;
-      background-color: #E6E6E7;
-      border-radius: 5px
-   }
-
-
-      #bar {
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        height: 50px;
-        background-color: #00050D;
-        }
-        #menu {
-            padding: 10px;
-            top: 0;
-            left: 0;
-            width: 45%;
-            height: 700px;
-            border-radius: 10px;
-            background-color: black;
-        }
-        #fade-in {
-            background-color:rgba(0, 0, 0, 0.9 );
-            position: relative;
-            margin: 50px 0px;
-            left: 70px;
-            height: 700px;
-        }
-        #ign{
-            background-size: 0%;
-            background-repeat: no-repeat;
-            background-image: url(https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remaster.png);
-            margin-top: 50px;
-            margin: -35px;
-            margin-left: 50px;
-        }
-        #loginButton{
-        height: 50px;
-        width: 150px;
-        font-size: 100%;
-        font-style:italic ;
-        color: black;
-        border-radius: 10px;
-        cursor: pointer;
-        }
-        #loginButton-2{
-        height: 60px;
-        width: 190px;
-        font-size: 100%;
-        font-style:italic ;
-        color: black;
-        border-radius: 10px;
-        cursor: pointer;
-        }
-        #logo-type{
-            background-size: 120px;
-            margin-top: -85px;
-            margin-left:30px ;
-            background-repeat: no-repeat;
-            background-image: url(https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remaster.png);
-        }
-        #ps {
-            position: fixed;
-            font-size: 30px;
-            color:#66696E ;
-            background-size:50px ;
-            margin-top: -55px;
-            margin-left: 720px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="head">
-        <div>
-                <div id="bar">
-                    
-                    <h2 id="ign">.</h2>     
-                    <button class="button-superior">início</button>
-                    <button class="button-superior-2">Filmes</button>
-                    <button class="button-superior-3">Tv Shows</button>
-                    <button class="button-superior-4">Esportes</button>
-                    <button class="button-superior-5">Ao Vivo</button>
-                    <button class="button-superior-6">Inscreva-se</button>
-                    <button class="button-superior-7">Loja</button>
-                    <h2 id="logo-type" >.</h2>
-                    <h3 id="ps">|</h3>
-                    
-                </div>
-                <div>
-                <div id="menu">
-                <div id="fade-in">  
-                <h1> Não repare nisso </h1>
-                <h1 style="color: white; font-family: sans-serif; font-size: 300%;">Filmes, séries, esportes e muito mais</h1>
-                <p style="color: white; font-family: sans-serif; font-size: 130%;">Assista a filmes e séries com anúncios e aproveite entrega grátis <br> e rápida em diversos produtos. Com o plano anual você parcela em <br>até 12x de R$ 13,90/mês sem juros (R$ 166,80 por ano).</p>
-                <p style="color: white; font-family: sans-serif; font-size: 130%;">Assista sem anúncios por mais R$ 10,00/mês.</p>
-                <a href="#">
-                <button id="loginButton">Faça login</button>
-                </a>
-                <p style="color: white; font-size: 130%;font-family: sans-serif;"><del>ㅤㅤㅤㅤㅤ</del> ou <del>ㅤㅤㅤㅤㅤ</del></p>
-                <button id="loginButton-2">Experimentar 30 dias grátis*</button>
-                <p></p>
-                <br>
-                <p style="color: white;font-family: sans-serif; font-size: 90%;">Após 30 dias, o Amazon Prime é renovado automaticamente <br> por R$ 19,90/mês ou até 12x de R$ 13,90 (R$ 166,80/ano). Cancele a qualquer momento.</p>
-                <button type="button">
-                  <span class="material-symbols-outlined">download_for_offline</span>
-                  <span>Save changes</span>
-                </button>
-          </div>
-          </div>
-          </div>
+<header id="head">
+
+    <nav id="bar">
+
+        
+        <a href="index.html" class="logo">
+            <img
+                src="https://m.media-amazon.com/images/G/01/digital/video/web/logo-min-remaster.png"
+                alt="Prime Video"
+            >
+        </a>
+
+        
+        <div class="nav-links">
+
+            <a href="index.html" class="nav-button">
+                Início
+            </a>
+
+            <a href="https://www.primevideo.com/movie" class="nav-button">
+                Filmes
+            </a>
+
+            <button class="nav-button">
+                TV Shows
+            </button>
+
+            <button class="nav-button">
+                Esportes
+            </button>
+
+            <button class="nav-button">
+                Ao Vivo
+            </button>
+
+            <button class="nav-button">
+                Inscreva-se
+            </button>
+
+            <button class="nav-button">
+                Loja
+            </button>
+
         </div>
-        <script src="main.js"></script>
-    </header>
+
+
+        <div class="nav-actions">
+
+            <button class="nav-icon">
+                <img src="lupa-store.png" alt="Pesquisar">
+            </button>
+
+            <button class="nav-icon">
+             
+            </button>
+
+            <button class="nav-icon">
+               
+            </button>
+
+            <a href="#" class="prime-button">
+                Junte-se ao Prime
+            </a>
+
+        </div>
+
+    </nav>
+
+  
+    <main id="menu">
+
+        <div id="fade-in">
+
+            <h1>Filmes, séries, esportes e muito mais</h1>
+
+            <p>
+                Assista a filmes e séries com anúncios e aproveite entrega grátis
+                e rápida em diversos produtos. Com o plano anual você parcela em
+                até 12x de R$ 13,90/mês sem juros (R$ 166,80 por ano).
+            </p>
+
+            <p>
+                Assista sem anúncios por mais R$ 10,00/mês.
+            </p>
+
+            <a href="login/login.html">
+                <button id="loginButton">
+                    Faça login
+                </button>
+            </a>
+
+            <p class="separator">
+                <span></span>
+                ou
+                <span></span>
+            </p>
+
+            <button id="loginButton-2">
+                Experimentar 30 dias grátis
+            </button>
+
+            <p class="small-text">
+                Após 30 dias, o Amazon Prime é renovado automaticamente
+                por R$ 19,90/mês ou até 12x de R$ 13,90
+                (R$ 166,80/ano). Cancele a qualquer momento.
+            </p>
+
+        </div>
+
+    </main>
+
+</header>
+
+
     
     
 </body>
