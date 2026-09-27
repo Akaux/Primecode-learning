@@ -6,14 +6,13 @@
 }
 
 body {
-    min-height: 100vh;
-
-    background-color: #00050D;
+    background-color: #000000;
     background-image: url("https://m.media-amazon.com/images/G/32/digital/video/Magellan_MLP/BRND_MTH25_PVMagnetLeft_1440x675_POST_Final_pt-BR_PV00057512.jpg");
 
-    background-position: right top;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: 100%;
+    min-height: 760px;
 
     font-family: Arial, sans-serif;
 }
@@ -147,15 +146,12 @@ body {
 
 
 #menu {
-    width: 1000px;
-    
-
-   
+    width: 1000px; 
 }
 
 #fade-in {
     width: 100%;
-    min-height: 800px;
+    min-height: 750px;
 
     padding: 100px 70px;
 
